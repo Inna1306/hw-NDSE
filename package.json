@@ -1,0 +1,23 @@
+{
+  "name": "hw-ndse",
+  "version": "1.0.0",
+  "description": "Homeworks NDSE 002-console Date",
+  "homepage": "https://github.com/Inna1306/hw-NDSE#readme",
+  "bugs": {
+    "url": "https://github.com/Inna1306/hw-NDSE/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inna1306/hw-NDSE.git"
+  },
+  "license": "ISC",
+  "author": "SolovtsevaIA",
+  "type": "commonjs",
+  "main": "console-date.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "yargs": "^18.1.0"
+  }
+}
