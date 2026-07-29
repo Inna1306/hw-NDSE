@@ -1,0 +1,12 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "Homework 004-Stream",
+  "license": "ISC",
+  "author": "SolovtsevaIA",
+  "type": "commonjs",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
