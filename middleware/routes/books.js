@@ -104,7 +104,7 @@ router.put("/:id", (req, res) => {
 // 5. Удалить книгу по ID (и удаляем файл, если он существует)
 router.delete("/:id", (req, res) => {
     const { id } = req.params;
-    const idx = storage.books.findIndex((b) => b.id === id);
+    const idx = storage.books.findIndex((el) => el.id === id);
     if (idx === -1) {
         return res.status(404);
         res.json("404 | Книга не найдена");
@@ -123,7 +123,7 @@ router.delete("/:id", (req, res) => {
 // 6. Скачать файл книги по ID
 router.get("/:id/download", (req, res) => {
     const { id } = req.params;
-    const book = storage.books.find((b) => b.id === id);
+    const book = storage.books.find((el) => el.id === id);
     if (!book) {
         return res.status(404);
         res.json("404 | Книга не найдена");
