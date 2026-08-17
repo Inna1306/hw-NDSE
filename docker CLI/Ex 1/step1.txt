@@ -1,0 +1,9 @@
+docker pull busybox:latest
+
+
+latest: Pulling from library/busybox
+b05093807bb0: Pull complete 
+7270b3e1860c: Download complete 
+Digest: sha256:dc2d74b28e4cf8984fa52af1f39bc7c3d9c73760b41a74d629f5d11b1ab28616
+Status: Downloaded newer image for busybox:latest
+docker.io/library/busybox:latest

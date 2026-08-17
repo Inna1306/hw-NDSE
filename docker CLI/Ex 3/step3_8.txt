@@ -1,0 +1,10 @@
+docker rm first_node second_node
+
+first_node
+second_node
+
+C:\Users\Inna742\Documents\GitHub\hw-NDSE\docker CLI>docker ps       
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\Inna742\Documents\GitHub\hw-NDSE\docker CLI>docker ps -a 
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES

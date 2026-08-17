@@ -1,0 +1,4 @@
+docker stop first_node second_node 
+
+first_node
+second_node

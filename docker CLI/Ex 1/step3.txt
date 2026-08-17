@@ -1,0 +1,5 @@
+docker CLI>docker ps -a
+
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                     PORTS     NAMES
+b0709c0c729b   busybox   "ping -c 7 netology.…"   2 minutes ago   Exited (0) 2 minutes ago             pinger

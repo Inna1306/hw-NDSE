@@ -1,0 +1,5 @@
+docker ps -a
+
+
+CONTAINER ID   IMAGE        COMMAND                  CREATED              STATUS              PORTS     NAMES
+65f8ec2457aa   node:15.14   "docker-entrypoint.s…"   About a minute ago   Up About a minute             first_node

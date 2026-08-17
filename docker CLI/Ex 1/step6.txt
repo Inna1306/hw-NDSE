@@ -1,0 +1,43 @@
+docker logs pinger
+
+
+PING netology.ru (51.250.51.8): 56 data bytes
+64 bytes from 51.250.51.8: seq=0 ttl=63 time=22.257 ms
+64 bytes from 51.250.51.8: seq=1 ttl=63 time=23.221 ms
+64 bytes from 51.250.51.8: seq=2 ttl=63 time=23.931 ms
+64 bytes from 51.250.51.8: seq=3 ttl=63 time=23.059 ms
+64 bytes from 51.250.51.8: seq=4 ttl=63 time=23.467 ms
+64 bytes from 51.250.51.8: seq=5 ttl=63 time=23.322 ms
+64 bytes from 51.250.51.8: seq=6 ttl=63 time=23.986 ms
+
+--- netology.ru ping statistics ---
+7 packets transmitted, 7 packets received, 0% packet loss
+round-trip min/avg/max = 22.257/23.320/23.986 ms
+
+PING netology.ru (51.250.51.8): 56 data bytes
+64 bytes from 51.250.51.8: seq=0 ttl=63 time=22.442 ms
+64 bytes from 51.250.51.8: seq=1 ttl=63 time=23.345 ms
+64 bytes from 51.250.51.8: seq=2 ttl=63 time=23.001 ms
+64 bytes from 51.250.51.8: seq=3 ttl=63 time=23.934 ms
+64 bytes from 51.250.51.8: seq=4 ttl=63 time=22.735 ms
+64 bytes from 51.250.51.8: seq=5 ttl=63 time=22.944 ms
+64 bytes from 51.250.51.8: seq=6 ttl=63 time=23.297 ms
+
+--- netology.ru ping statistics ---
+7 packets transmitted, 7 packets received, 0% packet loss
+round-trip min/avg/max = 22.442/23.099/23.934 ms
+
+PING netology.ru (51.250.51.8): 56 data bytes
+64 bytes from 51.250.51.8: seq=0 ttl=63 time=22.618 ms
+64 bytes from 51.250.51.8: seq=1 ttl=63 time=23.350 ms
+64 bytes from 51.250.51.8: seq=2 ttl=63 time=23.925 ms
+64 bytes from 51.250.51.8: seq=3 ttl=63 time=23.260 ms
+64 bytes from 51.250.51.8: seq=4 ttl=63 time=23.057 ms
+64 bytes from 51.250.51.8: seq=5 ttl=63 time=22.887 ms
+64 bytes from 51.250.51.8: seq=6 ttl=63 time=23.021 ms
+
+--- netology.ru ping statistics ---
+7 packets transmitted, 7 packets received, 0% packet loss
+round-trip min/avg/max = 22.618/23.159/23.925 ms
+
+3 запуска, 21 запрос

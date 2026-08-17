@@ -1,0 +1,6 @@
+docker pull node:15.14
+
+15.14: Pulling from library/node
+Digest: sha256:608bba799613b1ebf754034ae008849ba51e88b23271412427b76d60ae0d0627
+Status: Image is up to date for node:15.14
+docker.io/library/node:15.14

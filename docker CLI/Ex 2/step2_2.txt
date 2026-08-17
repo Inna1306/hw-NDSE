@@ -1,0 +1,7 @@
+Welcome to Node.js v15.14.0.
+Type ".help" for more information.
+[1G[0J> [3G
+console.log(`Привет, ${process.env.NAME} ${process.env.SURNAME}!`);
+Привет, Инна Соловцева!
+
+[90mundefined[39m
