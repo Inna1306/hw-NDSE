@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Редактировать книгу</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+
+        input,
+        textarea {
+            margin: 5px 0;
+            width: 300px;
+        }
+
+        .checkbox {
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Редактировать книгу: <%= book.title %>
+    </h1>
+    <form action="/books/<%= book.id %>" method="POST" enctype="multipart/form-data">
+        <label>Название:</label>
+        <input type="text" name="title" value="<%= book.title %>" required><br>
+
+        <label>Описание:</label>
+        <textarea name="description"><%= book.description || '' %></textarea><br>
+
+        <label>Авторы:</label>
+        <input type="text" name="authors" value="<%= book.authors || '' %>"><br>
+
+        <label>Избранное:</label>
+        <input type="checkbox" name="favorite" <%=book.favorite ? 'checked' : '' %> class="checkbox"><br>
+
+        <label>Обложка (fileCover):</label>
+        <input type="text" name="fileCover" value="<%= book.fileCover || '' %>"><br>
+
+        <label>Имя файла (fileName):</label>
+        <input type="text" name="fileName" value="<%= book.fileName || '' %>"><br>
+
+        <label>Файл книги (fileBook):</label>
+        <input type="file" name="fileBook"><br>
+        <span style="font-size: 0.9em; color: #666;">
+            (оставьте пустым, чтобы не менять файл)
+        </span><br><br>
+
+        <button type="submit">Сохранить</button>
+        <a href="/books/<%= book.id %>">Отмена</a>
+    </form>
+</body>
+
+</html>

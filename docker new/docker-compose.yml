@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - COUNTER_URL=http://counter:3001
+      - NODE_ENV=production
+    depends_on:
+      - counter
+    volumes:
+      - ./uploads:/app/uploads
+    networks:
+      - library-net
+
+  counter:
+    build: ./counter
+    ports:
+      - "3001:3001" #  для отладки
+    volumes:
+      - ./counter/data:/data
+    networks:
+      - library-net
+
+networks:
+  library-net:

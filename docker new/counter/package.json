@@ -1,0 +1,12 @@
+{
+    "name": "counter",
+    "version": "1.0.0",
+    "description": "Microservice for book view counter",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "^5.2.1"
+    }
+}
