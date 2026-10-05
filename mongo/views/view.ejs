@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Просмотр книги</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        .field {
+            margin: 10px 0;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <%= book.title %>
+    </h1>
+    <div class="field"><span class="label">ID:</span>
+        <%= book.id %>
+    </div>
+    <div class="field"><span class="label">Описание:</span>
+        <%= book.description || '—' %>
+    </div>
+    <div class="field"><span class="label">Авторы:</span>
+        <%= book.authors || '—' %>
+    </div>
+    <div class="field"><span class="label">Избранное:</span>
+        <%= book.favorite ? 'Да' : 'Нет' %>
+    </div>
+    <div class="field"><span class="label">Обложка:</span>
+        <%= book.fileCover || '—' %>
+    </div>
+    <div class="field"><span class="label">Имя файла:</span>
+        <%= book.fileName || '—' %>
+    </div>
+    <div class="field"><span class="label">Файл книги:</span>
+        <% if (book.fileBook) { %>
+            <a href="/api/books/<%= book.id %>/download">Скачать</a>
+            <% } else { %>
+                не загружен
+                <% } %>
+    </div>
+    <div class="field"><span class="label">Просмотры:</span>
+        <%= viewCount %>
+    </div>
+
+    <hr>
+    <a href="/books">⬅ Назад к списку</a>
+    <a href="/books/<%= book.id %>/edit">Редактировать</a>
+    <form action="/books/<%= book.id %>/delete" method="POST" style="display:inline;">
+        <button type="submit" onclick="return confirm('Удалить книгу?')">🗑 Удалить</button>
+    </form>
+</body>
+
+</html>

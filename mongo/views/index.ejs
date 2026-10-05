@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Библиотека – список книг</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        .book {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .book a {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Список книг</h1>
+    <a href="/books/create">Добавить книгу</a>
+    <hr>
+
+    <% if (books.length===0) { %>
+        <p>Нет книг. Добавьте первую!</p>
+        <% } else { %>
+            <% books.forEach(book=> { %>
+                <div class="book">
+                    <strong>
+                        <%= book.title %>
+                    </strong>
+                    <span>(<%= book.authors || 'Неизвестный автор' %>)</span>
+                    <a href="/books/<%= book.id %>">Просмотр</a>
+                    <a href="/books/<%= book.id %>/edit">Редактировать</a>
+                    <form action="/books/<%= book.id %>/delete" method="POST" style="display:inline;">
+                        <button type="submit" onclick="return confirm('Удалить книгу?')">Удалить</button>
+                    </form>
+                </div>
+                <% }) %>
+                    <% } %>
+</body>
+
+</html>
