@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Создать книгу</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+
+        input,
+        textarea {
+            margin: 5px 0;
+            width: 300px;
+        }
+
+        .checkbox {
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Добавить книгу</h1>
+    <form action="/books" method="POST" enctype="multipart/form-data">
+        <label>Название:</label>
+        <input type="text" name="title" required><br>
+
+        <label>Описание:</label>
+        <textarea name="description"></textarea><br>
+
+        <label>Авторы:</label>
+        <input type="text" name="authors"><br>
+
+        <label>Избранное:</label>
+        <input type="checkbox" name="favorite" class="checkbox"><br>
+
+        <label>Обложка (fileCover):</label>
+        <input type="text" name="fileCover"><br>
+
+        <label>Имя файла (fileName):</label>
+        <input type="text" name="fileName"><br>
+
+        <label>Файл книги (fileBook):</label>
+        <input type="file" name="fileBook"><br><br>
+
+        <button type="submit">Создать</button>
+        <a href="/books">Отмена</a>
+    </form>
+</body>
+
+</html>
